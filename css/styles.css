@@ -172,7 +172,6 @@ header {
 
 .hero {
   max-width: 1600px;
-  min-height: 600px;
   padding-top: 200px;
   padding-bottom: 200px;
   margin-left: auto;
@@ -247,7 +246,7 @@ header {
 .features-item-title {
   margin-bottom: 10px;
   padding: 0px;
-  padding-top: 30px;
+  margin-top: 30px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -262,11 +261,23 @@ header {
   color: var(--current-text-color);
 }
 
-.features-icon {
-  width: 270px;
-  height: 120px;
-  background: var(--second-bg-color);
+.features-thumb {
+  display: flex;
+  width: 100%;
+  min-height: 120px;
+  justify-content: center;
+
+  margin-bottom: 30px;
+
+  align-items: center;
+
   border-radius: 4px;
+  background-color: var(--second-bg-color);
+}
+
+.features-icon {
+  width: 70px;
+  height: 70px;
 }
 /*------------------------------about-----------------------*/
 .about-section {
@@ -467,8 +478,12 @@ header {
   cursor: pointer;
 }
 
-.project-item:hover,
-.project-item:focus {
+.image{
+  display: block;
+}
+
+.image:hover,
+.image:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
   0px 4px 4px rgba(0, 0, 0, 0.06),
   1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -511,6 +526,7 @@ header {
 
 .aside {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-logo {
